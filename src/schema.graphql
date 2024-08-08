@@ -14,4 +14,6 @@ type Listing {
 type Query {
   "A curated array of listings to feature on the homepage"
   featuredListings: [Listing!]!
+  "Returns the details about listing"
+  listing(id: ID!): Listing
 }
